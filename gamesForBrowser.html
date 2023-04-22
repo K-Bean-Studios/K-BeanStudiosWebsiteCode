@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title> K-Bean Studios | Games</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Official K-Bean Studios Game Dev Website">
+		<meta name="author" content="Liam">
+		<link rel="shortcut" href="">
+		<link rel="stylesheet" href="Style1.css">
+  <style>
+   * {
+     box-sizing: border-box;
+   }
+   
+   body {
+     margin: 0;
+     font-family: Arial, Helvetica, sans-serif;
+   }
+   
+   .header2 {
+     text-align: center;
+     padding: 32px;
+   }
+   
+   .row {
+     display: -ms-flexbox; /* IE 10 */
+     display: flex;
+     -ms-flex-wrap: wrap; /* IE 10 */
+     flex-wrap: wrap;
+     padding: 0 4px;
+   }
+   
+   /* Create two equal columns that sits next to each other */
+   .column {
+     -ms-flex: 50%; /* IE 10 */
+     flex: 50%;
+     padding: 0 4px;
+   }
+   
+   .column img {
+     margin-top: 8px;
+     vertical-align: middle;
+   }
+   
+   /* Style the buttons */
+   .btn {
+     border: none;
+     outline: none;
+     padding: 10px 16px;
+     background-color: #666;
+     cursor: pointer;
+     font-size: 18px;
+   }
+   
+   .btn:hover {
+     background-color: #ddd;
+   }
+   
+   .btn.active {
+     background-color: #ffffff;
+     color: white;
+   }
+   </style>
+		<!-- Hotjar Tracking Code for my site -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3460582,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="nav-items">
+				<a style="color: rgb(19, 94, 129);" href="index.html"><img style="height: 60px ; width: 60px; font-size: x-small;" src="Logo-V3-square.ico" alt="Logo"></a>
+			  <a style="color: white;" href="index.html">Home</a>
+			  <a style="color: white;" href="about.html">About</a>
+					<a style="color: white;" href="leaderboard.html">Leaderboard</a>
+			</nav>
+		 </header>
+		<main>
+			<!-- <div class="header2" id="myHeader">
+    <h1>Image Grid</h1>
+    <p>Click on the buttons to change the grid view.</p>
+    <button class="btn" onclick="one()">1</button>
+    <button class="btn active" onclick="two()">2</button>
+  </div> -->
+  <div class="row"> 
+   <div class="column">
+    <div class="imgContainer">
+     <img src="Fally blocks cube.jpg" style="width:100%">
+     <div class="imgButton"><form action="Fally Blocks/Fally Blocks.html" target="_blank"><button type="submit" id="FBB">Fally Blocks</button></form></div>
+    </div>
+    <div class="imgContainer">
+     <img src="Bugs banner.jpg" style="width:110%">
+     <div class="imgButton"><form action="Bugs Lite/bugs Lite.html" target="_blank"><button type="submit" id="BLB">Bugs Lite</button></form></div>
+    </div>
+    <div class="imgContainer">
+      <img src="Crash Simulator Banner.jpg" style="width:110%">
+      <div class="imgButton"><form action="Crash Simulator/Crash Simulator.html" target="_blank"><button type="submit" id="CSB">Crash Simulator</button></form></div>
+     </div>
+     <!-- <img src="/w3images/falls2.jpg" style="width:100%">
+     <img src="/w3images/paris.jpg" style="width:100%">
+     <img src="/w3images/nature.jpg" style="width:100%">
+     <img src="/w3images/mist.jpg" style="width:100%">
+     <img src="/w3images/paris.jpg" style="width:100%"> -->
+   </div>
+   <div class="column">
+    <div class="imgContainer">
+     <img src="Jumpii boii pic L2.jpg" style="width:100%">
+     <div class="imgButton"><form action="Jumpii boii/Jumpii boii.html" target="_blank"><button type="submit" id="JBB">Jumpii boii</button></form></div>
+
+    </div>
+     <div class="imgContainer">
+      <img src="bean wars map pic.jpg" style="width:120%">
+     </div>
+     <!-- <img src="/w3images/wedding.jpg" style="width:100%">
+     <img src="/w3images/mountainskies.jpg" style="width:100%">
+     <img src="/w3images/rocks.jpg" style="width:100%">
+     <img src="/w3images/underwater.jpg" style="width:100%"> -->
+   </div>  
+  
+ </div>
+ <script>
+  // Get the elements with class="column"
+  var elements = document.getElementsByClassName("column");
+  
+  // Declare a loop variable
+  var i;
+  
+  // Full-width images
+  function one() {
+      for (i = 0; i < elements.length; i++) {
+      elements[i].style.msFlex = "100%";  // IE10
+      elements[i].style.flex = "100%";
+    }
+  }
+  
+  // Two images side by side
+  function two() {
+    for (i = 0; i < elements.length; i++) {
+      elements[i].style.msFlex = "50%";  // IE10
+      elements[i].style.flex = "50%";
+    }
+  }
+  
+  // Add active class to the current button (highlight it)
+  var header = document.getElementById("myHeader");
+  var btns = header.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+  </script>
+		 </main>
+			<footer class="footer">
+				<div class="copy">&copy; 2022 K-Bean Studios <br> kbeanstudios@gmail.com</div>
+				<div class="bottom-links">
+						<div class="links">
+						<span>More Info</span>
+						<a href="index.html">Home</a>
+						<a href="games.html">Games</a>
+						<a href="about.html">About</a>
+						<a href="leaderboard.html">Leaderboard</a>
+						</div>
+				</div>
+				</footer>
+	</body>
+</html>
