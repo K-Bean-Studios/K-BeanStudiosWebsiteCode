@@ -122,3 +122,12 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #677bc4;
 }
+
+#addbotbutton{
+    background-color: #7289da;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
