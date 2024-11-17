@@ -289,6 +289,17 @@ main {
   box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.9)
 }
 
+#RAJ {
+  background-color: #c49845;
+  color: #fdd386;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px #fdd386
+}
+
 #JBB {
   background-color: #959595;
   color: rgb(210, 210, 210);
