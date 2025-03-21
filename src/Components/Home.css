@@ -1,10 +1,10 @@
 .home-section {
     position: relative;
-    height: 100vh; /* Full viewport height */
+    height: 80vh; /* Full viewport height */
     display: flex;
     align-items: center; /* Center content vertically */
     justify-content: center; /* Center content horizontally */
-    /*background-image: url('./Assets/TitlePictures/HomePagePicture.png'); */
+    background-image: url('./Assets/TitleBackground.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Make the background fixed */
