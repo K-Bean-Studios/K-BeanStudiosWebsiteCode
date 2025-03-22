@@ -7,6 +7,7 @@ import Games from './Components/Games';
 import About from './Components/About';
 
 import Jumpiiboii from './Components/Games/Jumpii boii/Jumpii boii';
+import FallyBlocks from './Components/Games/Fally Blocks/Fally Blocks';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path='/games' element={<Games />} />
             <Route path='/about' element={<About />} />
             <Route path='/games/jumpiiboii' element={<Jumpiiboii />} />
+            <Route path='/games/fallyblocks' element={<FallyBlocks />} />
           </Routes>
         </div>
       </section>

@@ -1,17 +1,17 @@
 import { useEffect } from 'react';
 import { initUnity } from './script';
-import './TemplateData/style.css'
+import './TemplateData/style.css';
 
-function Jumpiiboii() {
+function FallyBlocks() {
     /* global createUnityInstance */
     useEffect(() => {
         initUnity();
-      }, []);
+    }, []);
 
     return (
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '70vh'}}>
-            <div id="unity-container" className='unity-desktop'>
-                <canvas id="unity-canvas" width={960} height={1000}></canvas>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '70vh' }}>
+            <div id="unity-container" className="unity-desktop">
+                <canvas id="unity-canvas" width={960} height={600}></canvas>
                 <div id="unity-loading-bar">
                     <div id="unity-logo"></div>
                     <div id="unity-progress-bar-empty">
@@ -21,12 +21,12 @@ function Jumpiiboii() {
                 <div id="unity-warning"></div>
                 <div id="unity-footer">
                     <div id="unity-fullscreen-button"></div>
-                    <div id="unity-build-title">Jumpii boii</div>
-                    <p style={{ fontStyle: 'normal' }}>WASD to move, R to reset, M for main menu</p>
+                    <div id="unity-build-title">Fally Blocks</div>
+                    <p style={{ fontStyle: 'normal' }}>A&D to move, space to restart</p>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default Jumpiiboii;
+export default FallyBlocks;
