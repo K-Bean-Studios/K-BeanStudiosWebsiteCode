@@ -8,6 +8,7 @@ import About from './Components/About';
 
 import Jumpiiboii from './Components/Games/Jumpii boii/Jumpii boii';
 import FallyBlocks from './Components/Games/Fally Blocks/Fally Blocks';
+import CrashSim from './Components/Games/Crash Simulator/CrashSimulator';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path='/about' element={<About />} />
             <Route path='/games/jumpiiboii' element={<Jumpiiboii />} />
             <Route path='/games/fallyblocks' element={<FallyBlocks />} />
+            <Route path='/games/crashsimulator' element={<CrashSim />} />
           </Routes>
         </div>
       </section>
