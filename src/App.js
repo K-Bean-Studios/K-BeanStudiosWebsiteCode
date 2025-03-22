@@ -6,6 +6,8 @@ import Home from './Components/Home';
 import Games from './Components/Games';
 import About from './Components/About';
 
+import Jumpiiboii from './Components/Games/Jumpii boii/Jumpii boii';
+
 function App() {
   return (
     <Router>
@@ -16,6 +18,7 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/games' element={<Games />} />
             <Route path='/about' element={<About />} />
+            <Route path='/games/jumpiiboii' element={<Jumpiiboii />} />
           </Routes>
         </div>
       </section>

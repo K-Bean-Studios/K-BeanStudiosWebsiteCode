@@ -63,7 +63,7 @@ function Games() {
                     <div className="card-content">
                         <div className="media">
                             <div className="media-content">
-                                <p className="title is-4">Jumpii Boii</p>
+                                <p className="title is-4"><a href='games/jumpiiboii'>Jumpii Boii</a></p>
                             </div>
                         </div>
                         <div className="content">
